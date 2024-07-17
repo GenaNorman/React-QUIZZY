@@ -1,0 +1,24 @@
+// ===========COMPONENT/SRC============//
+@import "../components/component";
+
+// ===========COMPONENTS============ //
+@import "../components/styles/navigation";
+
+// ===========PAGES============ //
+@import "../pages/styles/dashboard";
+@import "../pages/styles/courses";
+
+// ===========SASS FILES============ //
+@import "abstracts/variables";
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/buttons";
+@import "components/headers";
+
+@import "layouts/navigation";
+// ===============MOBILE STYLES==============//
+@import "../components/styles/mobile";

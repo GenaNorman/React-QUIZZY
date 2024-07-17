@@ -1,0 +1,34 @@
+// =================Admin===========//
+.Admin {
+  display: flex;
+  justify-content: space-between;
+
+  &__block {
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+// ================creator=================//
+.creator {
+  display: flex;
+  justify-content: space-between;
+
+  &__block {
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+// ================student================//
+
+.student {
+  display: flex; 
+  justify-content: space-between;
+
+  &__block {
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+  }
+}

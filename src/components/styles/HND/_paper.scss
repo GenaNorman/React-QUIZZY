@@ -1,0 +1,84 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  justify-content: space-evenly;
+}
+.slogan__box {
+    border-bottom: 0.1rem solid #8080804d;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    &-header {
+      padding-top: 3rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+    &-slogan {
+      text-align: center;
+      color: var(--descriptive-text-color);
+    }
+  }
+
+.header_slogan {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  line-height: 3rem;
+  width: 92%;
+  margin: 0 auto;
+  color: var(--descriptive-text-color);
+  border-bottom: 0.1rem solid #8080804d;
+}
+.case_study {
+  width: 30rem;
+  background-color: var(--content-color);
+  box-shadow: 0 0 0.6rem 0 var(--descriptive-text-color);
+  border-radius: 1rem;
+  /* border: 0.1rem solid var(--main-color); */
+}
+.case {
+  display: flex;
+  align-items: center;
+}
+.case:not(:last-child) {
+  border-bottom: 0.1rem solid var(--main-color);
+}
+.case:hover {
+  background-color: var(--inactive-color);
+  transition: 0.5s;
+  color: var(--content-color);
+  /* transform: scale(1.1); */
+}
+.casename {
+  line-height: 1.5rem;
+}
+.practicals {
+  width: 30rem;
+  background-color: var(--content-color);
+  box-shadow: 0 0 0.6rem 0 var(--descriptive-text-color);
+  border-radius: 1rem;
+  /* border: 0.1rem solid var(--main-color); */
+}
+.main_paper {
+  width: 30rem;
+  background-color: var(--content-color);
+  box-shadow: 0 0 0.6rem 0 var(--descriptive-text-color);
+  border-radius: 1rem;
+}
+.category_name {
+  background-color: var(--main-color);
+  font-size: 1.4rem;
+  padding: 0.7rem 0.5rem;
+  width: 30 rem;
+  color: var(--main-text-color);
+}
+.pdficon {
+  width: 10rem;
+}
+.pdfimg {
+  width: 10rem;
+}
+.name {
+  margin: auto 0;
+  font-size: 1.2rem;
+}
