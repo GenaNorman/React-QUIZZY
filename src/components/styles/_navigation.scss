@@ -4,7 +4,7 @@
   transition: all 0.5s;
 }
 .sidebar {
-  background: linear-gradient(to bottom right, #fc0238, rgb(17, 24, 31));
+  background: linear-gradient(to bottom right, var(--main-color), var(--submain-color));
   height: 100vh;
   border-top-right-radius: 0.7rem;
   border-bottom-right-radius: 0.7rem;
