@@ -5,20 +5,21 @@
   justify-content: space-evenly;
 }
 .slogan__box {
-    border-bottom: 0.1rem solid #8080804d;
-    width: 90%;
-    margin: 0 auto;
-    padding-bottom: 2rem;
-    &-header {
-      padding-top: 3rem;
-      font-size: 2rem;
-      text-align: center;
-    }
-    &-slogan {
-      text-align: center;
-      color: var(--descriptive-text-color);
-    }
+  border-bottom: 0.1rem solid #8080804d;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  &-header {
+    padding-top: 3rem;
+    font-size: 2rem;
+    text-align: center;
   }
+  &-slogan {
+    text-align: center;
+    color: var(--descriptive-text-color);
+  }
+}
 
 .header_slogan {
   text-align: center;
@@ -68,8 +69,12 @@
 .category_name {
   background-color: var(--main-color);
   font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
   padding: 0.7rem 0.5rem;
-  width: 30 rem;
+  width: 96.3%;
   color: var(--main-text-color);
 }
 .pdficon {
@@ -81,4 +86,17 @@
 .name {
   margin: auto 0;
   font-size: 1.2rem;
+}
+.control {
+  display: flex;
+  margin: 0;
+  gap: .5rem;
+  align-items: center;
+
+  &__name {
+    font-size: 1.5rem;
+  }
+  &__sorting {
+    font-size: 2rem;
+  }
 }

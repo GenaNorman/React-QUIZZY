@@ -1,6 +1,6 @@
 .translate {
-  transform: translateX(-90%);
-  // width: 0;
+  // transform: translateX(-90%);
+  width: 0;
   transition: all 0.5s;
 }
 .sidebar {
@@ -43,7 +43,7 @@
     font: 900 2rem Arial;
   }
   &__sidenav {
-    height: 85vh;
+    height: 100%;
     display: flex;
     overflow-y: auto;
     overflow-x: hidden;

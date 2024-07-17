@@ -1,4 +1,5 @@
 import { initialCaseStudy } from "../../../data/PapersCategory";
+import { TbArrowsSort } from "react-icons/tb";
 import { Link } from "react-router-dom";
 function Papers() {
   return (
@@ -13,17 +14,11 @@ function Papers() {
         <div className="papers_category">
           <div className="case_study">
             <h3 className="category_name">
-              Case Study{" "}
-              <select
-                className="category"
-                // value={category}
-                // onChange={(e) => setCategory(e.target.value)}
-              >
-                <option>School Of Engineering</option>
-                <option>School Of Buisness</option>
-                <option>School Of Agriculture</option>
-                <option>School Of Medical Science</option>
-              </select>
+              <p>Case Study</p>
+              <p className="control">
+                <p className="control__name">Sort by</p>
+                <TbArrowsSort className="control__sorting" />
+              </p>
             </h3>
             {initialCaseStudy.map((casestudy, index) => (
               <CaseStudy casestudy={casestudy} key={index} />
@@ -33,7 +28,13 @@ function Papers() {
 
         <div className="papers_category">
           <div className="practicals">
-            <h3 className="category_name">Practicals</h3>
+            <h3 className="category_name">
+              <p>Practicals</p>
+              <p className="control">
+                <p className="control__name">Sort by</p>
+                <TbArrowsSort className="control__sorting" />
+              </p>
+            </h3>
             {initialCaseStudy.map((casestudy, index) => (
               <CaseStudy casestudy={casestudy} key={index} />
             ))}
@@ -42,7 +43,13 @@ function Papers() {
 
         <div className="papers_category">
           <div className="main_paper">
-            <h3 className="category_name">Main Paper</h3>
+            <h3 className="category_name">
+              <p>Main Paper</p>
+              <p className="control">
+                <p className="control__name">Sort by</p>
+                <TbArrowsSort className="control__sorting" />
+              </p>
+            </h3>
             {initialCaseStudy.map((casestudy, index) => (
               <CaseStudy casestudy={casestudy} key={index} />
             ))}

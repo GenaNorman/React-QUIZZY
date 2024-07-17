@@ -18,11 +18,7 @@
     align-items: center;
   }
   .sidebar {
-    background: linear-gradient(
-      to bottom right,
-      rgb(252, 2, 56),
-      rgb(17, 24, 31)
-    );
+    background: linear-gradient(to bottom right, var(--main-color), var(--submain-color));
     height: 100vh;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
