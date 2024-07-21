@@ -1,0 +1,26 @@
+.btn {
+  &__active {
+    background-color: orange;
+    border-color: orange;
+    color: white;
+    border-radius: 1px;
+  }
+  &__completed {
+    background-color: green;
+    border-color: green;
+    color: white;
+    border-radius: 1px;
+  }
+  &__expired {
+    background-color: red;
+    border-color: red;
+    color: white;
+    border-radius: 1px;
+  }
+  &__inactive {
+    background-color: grey;
+    border-color: grey;
+    color: white;
+    border-radius: 1px;
+  }
+}

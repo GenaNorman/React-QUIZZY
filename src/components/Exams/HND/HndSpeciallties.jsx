@@ -1,7 +1,7 @@
 import { useProvider } from "../../../context/HandlerContext";
-import { useRef, useState } from "react";
+// import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import "reactjs-popup/dist/index.css";
+import "reactjs-popup/dist/index.css"; 
 import Popup from "reactjs-popup";
 
 import { IoIosArrowForward } from "react-icons/io";

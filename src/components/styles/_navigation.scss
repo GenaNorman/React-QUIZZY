@@ -98,10 +98,10 @@
 // ===============TOPBAR NAVIGATION===============//
 
 .topnav {
-  width: 98.6%;
+  width: 97%;
   background-color: var(--content-color);
   padding: 0.8rem 0.8rem;
-
+  margin: .5rem auto;
   margin-top: 0.5rem;
   display: flex;
 
@@ -117,7 +117,7 @@
   color: gold;
   border-radius: 1rem;
   padding: 0.4rem;
-  display: none;
+  // display: none;
 }
 @media only screen and (max-width: 412px) {
   .topnav__leftnav-hambuger {
@@ -211,7 +211,7 @@
 }
 .subroute_item:hover {
   transition: 0.6s;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(44, 30, 73);
   /* background-color: var(--inactive-color); */
 }
 .itemname {

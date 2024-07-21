@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState,useRef } from "react";
+import React, { createContext, useContext, useState, useRef } from "react";
 import { initialSpecialty } from "../data/Specialties";
 
 const handlerContext = createContext();
@@ -9,9 +9,8 @@ function HandlerContext({ children }) {
   // const [category, setCategory] = useState("");
   const [papers, setPapers] = useState("");
   const [image, setImage] = useState();
+  const [activeTab, setActiveTab] = useState("");
 
-
-  
   function handleAddNewDepartment(newDepartment) {
     setDepartmentList((departmentList) => [...departmentList, newDepartment]);
   }
@@ -42,6 +41,7 @@ function HandlerContext({ children }) {
   return (
     <handlerContext.Provider
       value={{
+        // department states/////////////
         hidesidebar,
         handleSubmit,
         setName,
@@ -55,7 +55,9 @@ function HandlerContext({ children }) {
         image,
 
         departmentList,
-        
+        // ui states//////////////////
+        activeTab,
+        setActiveTab,
       }}
     >
       {children}

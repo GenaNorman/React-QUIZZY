@@ -7,7 +7,7 @@ function StudentPage() {
   return (
     <div className="student">
       <SideBar />
-      <div className="creator__block">
+      <div className="student__block">
         <TopNav />
         <StudentDashboard />
       </div>
