@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
 import { FaFilePdf } from "react-icons/fa6";
+import { IoIosArrowForward } from "react-icons/io";
 
-import Calendar from "react-calendar";
+// import Calendar from "react-calendar";
 
 
 function StudentDashboard() {
-  const [value, onChange] = useState(new Date());
+  // const [value, onChange] = useState(new Date());
   return (
     <>
       <div>
@@ -22,7 +23,7 @@ function StudentDashboard() {
                 Hello Norman, Welcome Back!!!
               </h2>
               <p className="avatar__bio-name">
-                Lets continue were we left off preparing you for your upcoming
+                Lets continue  preparing you for your upcoming
                 national exams
               </p>
             </div>
@@ -91,6 +92,7 @@ function StudentDashboard() {
           <div className="study__revision">
             <h3 className="study__revision-heading">
               <p className="study__revision--heading-name">Continue Revising</p>
+              <p>see all</p>
             </h3>
             <div className="revise">
               <FaFilePdf className="revise__pdficon" />
@@ -103,7 +105,7 @@ function StudentDashboard() {
                 <span className="revise__casename-year">2020</span>
               </div>
               <p>
-                <IoCheckmarkDoneCircle className="revise__icon" />
+                <IoIosArrowForward  className="revise__icon" />
               </p>
             </div>
             <div className="revise">
@@ -117,7 +119,7 @@ function StudentDashboard() {
                 <span className="revise__casename-year">2020</span>
               </div>
               <p>
-                <IoCheckmarkDoneCircle className="revise__icon" />
+                <IoIosArrowForward className="revise__icon" />
               </p>
             </div>
             <div className="revise">
@@ -131,7 +133,7 @@ function StudentDashboard() {
                 <span className="revise__casename-year">2020</span>
               </div>
               <p>
-                <IoCheckmarkDoneCircle className="revise__icon" />
+                <IoIosArrowForward className="revise__icon" />
               </p>
             </div>
             <div className="revise">
@@ -145,7 +147,7 @@ function StudentDashboard() {
                 <span className="revise__casename-year">2020</span>
               </div>
               <p>
-                <IoCheckmarkDoneCircle className="revise__icon" />
+                <IoIosArrowForward className="revise__icon" />
               </p>
             </div>
           </div>

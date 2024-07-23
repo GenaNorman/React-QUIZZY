@@ -37,3 +37,20 @@
     right: 0;
   }
 }
+@media only screen and (max-width: 412px) {
+  .student {
+    &__block {
+      position: absolute;
+      width: 100%;
+      top: 0;
+    }
+  }
+  .Admin {
+    &__block {
+      position: absolute;
+      width: 100%;
+      top: 0;
+    }
+  }
+}
+

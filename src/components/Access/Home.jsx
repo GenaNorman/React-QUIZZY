@@ -5,10 +5,10 @@ function Home() {
   return (
     <div className="block">
       <Link to="/signin">
-        <button className="btn">SignUp</button>
+        <button className="btn">SignIn</button>
       </Link>
       <Link to="/signup">
-        <button className="btn">SignIn</button>
+        <button className="btn">SignUp</button>
       </Link>
     </div>
   );

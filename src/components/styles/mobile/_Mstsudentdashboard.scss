@@ -1,0 +1,34 @@
+@media only screen and (max-width: 412px) {
+  .avatar {
+    position: relative;
+    width: 98%;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 auto;
+
+    &__bio {
+      width: 100%;
+    }
+  }
+  .review {
+    margin-left: 0;
+    &__courses {
+      margin: 0 auto;
+      row-gap: 1rem;
+      &--type {
+        width: 100%;
+        &-name {
+          font-size: 2rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .study {
+    width: 98%;
+margin: 1rem auto;
+    &__revision {
+      width: 100%;
+    }
+  }
+}
