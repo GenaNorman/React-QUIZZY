@@ -68,9 +68,7 @@ function Papers() {
                 ))}
               </div>
             </div>
-          </div>
-          <div className="specification__questionstopics">
-            <Topics />
+          {/* <Topics/> */}
           </div>
         </div>
       </div>
