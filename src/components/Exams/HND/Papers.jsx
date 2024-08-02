@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useProvider } from "../../../context/HandlerContext";
 import Topics from "./Topics";
 function Papers() {
-  const { activeTab, setActiveTab } = useProvider();
+  const { nextTab, handleNextTab } = useProvider();
   return (
     <>
       <div className="slogan__box">
@@ -13,62 +13,68 @@ function Papers() {
           Case Study, Practical, Main question paper
         </p>
       </div>
-      <div>
+      <div className="us">
         <div className="choice">
+            <h2 className="choice__category">Categories</h2>
           <div className="choice__flex">
-            <p className="choice__flex-year">Yearly</p>
-            <Link to="../HND/Topics.jsx">
-              <p className="choice__flex-topic">Topics</p>
-            </Link>
+            <p className="choice__flex-year" onClick={handleNextTab}>
+              Yearly
+            </p>
+            <p className="choice__flex-topic" onClick={handleNextTab}>
+              Topics
+            </p>
           </div>
         </div>
         <div className="specification">
           <div className="specification__questionsyearly">
-            <div className="papers_category">
-              <div className="case_study">
-                <h3 className="category_name">
-                  <p className="control__name">Case Study</p>
-                  <p className="control">
-                    <p className="control__name">Sort by</p>
-                    <TbArrowsSort className="control__sorting" />
-                  </p>
-                </h3>
-                {initialCaseStudy.map((casestudy, index) => (
-                  <CaseStudy casestudy={casestudy} key={index} />
-                ))}
+            <div className={nextTab ? "tar" : "conta "}>
+              <div className="papers_category">
+                <div className="case_study">
+                  <h3 className="category_name">
+                    <p className="control__name">Case Study</p>
+                    <p className="control">
+                      <p className="control__name">Sort by</p>
+                      <TbArrowsSort className="control__sorting" />
+                    </p>
+                  </h3>
+                  {initialCaseStudy.map((casestudy, index) => (
+                    <CaseStudy casestudy={casestudy} key={index} />
+                  ))}
+                </div>
+              </div>
+
+              <div className="papers_category">
+                <div className="practicals">
+                  <h3 className="category_name">
+                    <p className="control__name">Practicals</p>
+                    <p className="control">
+                      <p className="control__name">Sort by</p>
+                      <TbArrowsSort className="control__sorting" />
+                    </p>
+                  </h3>
+                  {initialCaseStudy.map((casestudy, index) => (
+                    <CaseStudy casestudy={casestudy} key={index} />
+                  ))}
+                </div>
+              </div>
+
+              <div className="papers_category">
+                <div className="main_paper">
+                  <h3 className="category_name">
+                    <p className="control__name">Main Paper</p>
+                    <p className="control">
+                      <p className="control__name">Sort by</p>
+                      <TbArrowsSort className="control__sorting" />
+                    </p>
+                  </h3>
+                  {initialCaseStudy.map((casestudy, index) => (
+                    <CaseStudy casestudy={casestudy} key={index} />
+                  ))}
+                </div>
               </div>
             </div>
 
-            <div className="papers_category">
-              <div className="practicals">
-                <h3 className="category_name">
-                  <p className="control__name">Practicals</p>
-                  <p className="control">
-                    <p className="control__name">Sort by</p>
-                    <TbArrowsSort className="control__sorting" />
-                  </p>
-                </h3>
-                {initialCaseStudy.map((casestudy, index) => (
-                  <CaseStudy casestudy={casestudy} key={index} />
-                ))}
-              </div>
-            </div>
-
-            <div className="papers_category">
-              <div className="main_paper">
-                <h3 className="category_name">
-                  <p className="control__name">Main Paper</p>
-                  <p className="control">
-                    <p className="control__name">Sort by</p>
-                    <TbArrowsSort className="control__sorting" />
-                  </p>
-                </h3>
-                {initialCaseStudy.map((casestudy, index) => (
-                  <CaseStudy casestudy={casestudy} key={index} />
-                ))}
-              </div>
-            </div>
-          {/* <Topics/> */}
+            <Topics />
           </div>
         </div>
       </div>

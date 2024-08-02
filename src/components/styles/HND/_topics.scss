@@ -1,0 +1,29 @@
+.case_study {
+    width: 30rem;
+    background-color: var(--content-color);
+    box-shadow: 0 0 0.6rem 0 var(--descriptive-text-color);
+    border-radius: 1rem;
+    /* border: 0.1rem solid var(--main-color); */
+  }
+  .case {
+    display: flex;
+    align-items: center;
+  }
+  .case:not(:last-child) {
+    border-bottom: 0.1rem solid var(--main-color);
+  }
+  .case:hover {
+    background-color: var(--inactive-color);
+    transition: 0.5s;
+    color: var(--content-color);
+    /* transform: scale(1.1); */
+  }
+  .casename {
+    line-height: 1.5rem;
+  }
+  .pdficon {
+    width: 10rem;
+  }
+  .pdfimg {
+    width: 10rem;
+  }

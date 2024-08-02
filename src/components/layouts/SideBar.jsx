@@ -10,16 +10,16 @@ function SideBar() {
   const { toggleNav, hidesidebar } = useProvider();
   return (
     <div className={toggleNav ? "sidebar" : "translate"}>
-      <ul className="sidebar__sidenav">
         <div className="sidebar__toggle">
           <p className="sidebar__toggle-logo">Quizy</p>
           <RxCross2 className="sidebar__toggle-close" onClick={hidesidebar} />
         </div>
+      <ul className="sidebar__sidenav">
         {Navigations.map((navigate, index) => (
-          <Navigate navigate={navigate} key={index} />
+          <Navigate navigate={navigate} key={navigate.id} />
         ))}
       </ul>
-      {/* <span className="sidebar__copyright">&copy;2024 T-chala</span> */}
+      <span className="sidebar__copyright">&copy;2024 T-chala</span>
     </div>
   );
 }

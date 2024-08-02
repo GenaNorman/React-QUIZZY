@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useRef } from "react";
+import React, { createContext, useContext, useState } from "react";
 import { initialSpecialty } from "../data/Specialties";
 
 const handlerContext = createContext();
@@ -9,7 +9,8 @@ function HandlerContext({ children }) {
   // const [category, setCategory] = useState("");
   const [papers, setPapers] = useState("");
   const [image, setImage] = useState();
-  const [activeTab, setActiveTab] = useState("");
+  const [nextTab, setNextTab] = useState(false);
+  const [prevTab, setPrevTab] = useState(false);
 
   function handleAddNewDepartment(newDepartment) {
     setDepartmentList((departmentList) => [...departmentList, newDepartment]);
@@ -38,12 +39,20 @@ function HandlerContext({ children }) {
     setToggleNav(!toggleNav);
   }
 
+  function handleNextTab() {
+    setNextTab(!nextTab);
+  }
+  function handlePrevTab() {
+    setPrevTab(!prevTab);
+  }
   return (
     <handlerContext.Provider
       value={{
         // department states/////////////
         hidesidebar,
         handleSubmit,
+        handleNextTab,
+        handlePrevTab,
         setName,
         // setCategory,
         setPapers,
@@ -56,8 +65,9 @@ function HandlerContext({ children }) {
 
         departmentList,
         // ui states//////////////////
-        activeTab,
-        setActiveTab,
+        nextTab,
+        prevTab,
+        
       }}
     >
       {children}

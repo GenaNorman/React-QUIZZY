@@ -1,0 +1,58 @@
+body {
+  box-sizing: border-box;
+
+  position: relative;
+  overflow: hidden;
+}
+.container {
+  width: 50%;
+  height: 7rem;
+  background-color: indianred;
+  margin: auto auto;
+  padding: 1rem;
+  /* position: relative; */
+  display: flex;
+
+  justify-content: space-between;
+  overflow: hidden;
+}
+.main {
+  display: flex;
+  width: 100%;
+  /* justify-content: space-evenly; */
+  /* position: absolute; */
+  /* background-color: blue; */
+}
+.sub {
+  display: flex;
+  width: 100%;
+  /* justify-content: space-evenly; */
+  /* position: absolute; */
+}
+.block {
+  flex: 0 0 10rem;
+  height: 4rem;
+
+  background-color: orangered;
+}
+.block2 {
+  width: 10rem;
+  height: 4rem;
+  /* left: 2rem; */
+  background-color: gray;
+}
+.block3 {
+  width: 10rem;
+  height: 4rem;
+  background-color: darkblue;
+}
+.block4 {
+  width: 10rem;
+  height: 4rem;
+  background-color: gold;
+}
+.block5 {
+  width: 10rem;
+  height: 4rem;
+  background-color: saddlebrown;
+}

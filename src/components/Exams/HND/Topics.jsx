@@ -1,10 +1,12 @@
 import React from "react";
 import { initialCaseStudy } from "../../../data/PapersCategory";
 import { Link } from "react-router-dom";
+import { useProvider } from "../../../context/HandlerContext";
 
 function Topics() {
+  const { nextTab } = useProvider();
   return (
-    <div>
+    <div className={nextTab ? "next" : "forward"}>
       {initialCaseStudy.map((study, index) => (
         <Topicbased study={study} key={index} />
       ))}
