@@ -86,7 +86,7 @@ function StudentDashboard() {
                 className="review__courses--type-icon"
               />
             </div>
-          </div>
+          </div> 
         </div>
         <div className="study">
           <div className="study__revision">
