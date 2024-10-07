@@ -1,10 +1,42 @@
-import { initialCaseStudy } from "../../../data/PapersCategory";
-import { TbArrowsSort } from "react-icons/tb";
-import { Link } from "react-router-dom";
-import { useProvider } from "../../../context/HandlerContext";
-import Topics from "./Topics";
+import { initialCaseStudy }                from "../../../data/PapersCategory";
+import { TbArrowsSort }                    from "react-icons/tb";
+
+import { useProvider }                     from "../../../context/HandlerContext";
+import Topics                              from "./Topics";
+
+import { Link }                            from "react-router-dom";
+
+
+
+import axios                               from 'axios';
+
+import { useEffect, useState }             from "react";
+
+
+
+
+
+
+
+
 function Papers() {
+  const [departments, setDepartments] = useState([]);
   const { nextTab, handleNextTab } = useProvider();
+  
+  useEffect(() => {
+    const fetchDepartments = async () => {
+      try {
+        const response = await axios.get('https://quizzy-react-adapt.onrender.com/api/departments');
+        console.log('Fetched departments:', response.data);  // Log the result to the console
+        setDepartments(response.data);
+      } catch (error) {
+        console.error('Error fetching departments:', error);
+      }
+    };
+
+    fetchDepartments();
+  }, []);
+  
   return (
     <>
       <div className="slogan__box">

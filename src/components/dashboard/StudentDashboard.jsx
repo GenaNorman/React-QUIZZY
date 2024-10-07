@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { IoCheckmarkDoneCircle } from "react-icons/io5";
-import { FaFilePdf } from "react-icons/fa6";
+// import React, { useState } from "react";
+// import { IoCheckmarkDoneCircle } from "react-icons/io5";
+import { FaFilePdf }         from "react-icons/fa6";
+
 import { IoIosArrowForward } from "react-icons/io";
 
 // import Calendar from "react-calendar";
-
 
 function StudentDashboard() {
   // const [value, onChange] = useState(new Date());
@@ -23,8 +23,7 @@ function StudentDashboard() {
                 Hello Norman, Welcome Back!!!
               </h2>
               <p className="avatar__bio-name">
-                Lets continue  preparing you for your upcoming
-                national exams
+                Lets continue preparing you for your upcoming national exams
               </p>
             </div>
           </div>
@@ -105,7 +104,7 @@ function StudentDashboard() {
                 <span className="revise__casename-year">2020</span>
               </div>
               <p>
-                <IoIosArrowForward  className="revise__icon" />
+                <IoIosArrowForward className="revise__icon" />
               </p>
             </div>
             <div className="revise">

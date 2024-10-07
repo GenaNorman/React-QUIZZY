@@ -1,11 +1,17 @@
-import { useProvider } from "../../../context/HandlerContext";
-// import { useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { useProvider }       from "../../../context/HandlerContext";
+
+import { Link }              from "react-router-dom";
+
+import Popup                 from "reactjs-popup";
+
 import "reactjs-popup/dist/index.css"; 
-import Popup from "reactjs-popup";
+import { RxCross2 }          from "react-icons/rx";
+
 
 import { IoIosArrowForward } from "react-icons/io";
-import { RxCross2 } from "react-icons/rx";
+
+
+
 
 function HndSpecialties() {
   const {
@@ -37,7 +43,7 @@ function HndSpecialties() {
           <div className="flex">
             {/* /////////////////POPUP BOX//////////////////// */}
             <Popup
-              trigger={<button className="btn"> Add Department </button>}
+              trigger={<button className="btn"> Add  </button>}
               modal
               nested
             >

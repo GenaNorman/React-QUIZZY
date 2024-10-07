@@ -3,5 +3,8 @@
 @import "../components/styles/HND/paper";
 @import "../components/styles/Dashboard/student";
 
-// #########################SECURITY ACCESS#############
-@import "../components/Access/credential";
+
+// #####################LANDING PAGE AND SIGNUP###############
+@import "./Access/styles/credential";
+@import"./Access/styles/landing.scss";
+@import"./Access/styles/mobiles/m_landing.scss";

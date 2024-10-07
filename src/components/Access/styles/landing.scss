@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: plum;
+  &__logo {
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: black ops one;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    &--type {
+      font-size: 1.5rem;
+      margin-left: 2rem;
+      cursor: pointer;
+      text-transform: capitalize;
+    }
+  }
+  &__access {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+}
