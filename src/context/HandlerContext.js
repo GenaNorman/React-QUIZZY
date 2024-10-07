@@ -3,7 +3,7 @@ import { initialSpecialty } from "../data/Specialties";
 
 const handlerContext = createContext();
 function HandlerContext({ children }) {
-  const [toggleNav, setToggleNav] = useState(true);
+  const [toggleNav, setToggleNav] = useState(false);
   const [departmentList, setDepartmentList] = useState(initialSpecialty);
   const [name, setName] = useState("");
   // const [category, setCategory] = useState("");
